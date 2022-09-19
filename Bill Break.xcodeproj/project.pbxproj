@@ -7,23 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21763EB28D200D2001A78F4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21763EA28D200D2001A78F4 /* ResultViewController.swift */; };
 		E285A6DA28D0FC9E002D92E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E285A6D928D0FC9E002D92E0 /* AppDelegate.swift */; };
 		E285A6DC28D0FC9E002D92E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E285A6DB28D0FC9E002D92E0 /* SceneDelegate.swift */; };
-		E285A6DE28D0FC9E002D92E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E285A6DD28D0FC9E002D92E0 /* ViewController.swift */; };
+		E285A6DE28D0FC9E002D92E0 /* EqualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E285A6DD28D0FC9E002D92E0 /* EqualViewController.swift */; };
 		E285A6E128D0FC9E002D92E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E285A6DF28D0FC9E002D92E0 /* Main.storyboard */; };
 		E285A6E328D0FCA2002D92E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E285A6E228D0FCA2002D92E0 /* Assets.xcassets */; };
 		E285A6E628D0FCA2002D92E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E285A6E428D0FCA2002D92E0 /* LaunchScreen.storyboard */; };
+		E28D274E28D6010300CBDE39 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D274D28D6010300CBDE39 /* StartViewController.swift */; };
+		E28D275128D610AA00CBDE39 /* PreGreedyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D275028D610AA00CBDE39 /* PreGreedyViewController.swift */; };
+		E28D275428D6196000CBDE39 /* GreedyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D275328D6196000CBDE39 /* GreedyViewController.swift */; };
+		E28D275928D626DD00CBDE39 /* GreedyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D275728D626DD00CBDE39 /* GreedyCell.swift */; };
+		E28D275A28D626DD00CBDE39 /* GreedyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28D275828D626DD00CBDE39 /* GreedyCell.xib */; };
+		E2B9C19628D760D800BA2DFA /* GreedyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C19528D760D800BA2DFA /* GreedyUser.swift */; };
+		E2B9C19928D7D58900BA2DFA /* PayersArr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C19828D7D58900BA2DFA /* PayersArr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E21763EA28D200D2001A78F4 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E256C81128D24CAA007B911D /* Bill Break.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bill Break.entitlements"; sourceTree = "<group>"; };
 		E285A6D628D0FC9E002D92E0 /* Bill Break.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bill Break.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E285A6D928D0FC9E002D92E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E285A6DB28D0FC9E002D92E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E285A6DD28D0FC9E002D92E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E285A6DD28D0FC9E002D92E0 /* EqualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualViewController.swift; sourceTree = "<group>"; };
 		E285A6E028D0FC9E002D92E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E285A6E228D0FCA2002D92E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E285A6E528D0FCA2002D92E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E285A6E728D0FCA2002D92E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28D274D28D6010300CBDE39 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		E28D275028D610AA00CBDE39 /* PreGreedyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreGreedyViewController.swift; sourceTree = "<group>"; };
+		E28D275328D6196000CBDE39 /* GreedyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyViewController.swift; sourceTree = "<group>"; };
+		E28D275728D626DD00CBDE39 /* GreedyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyCell.swift; sourceTree = "<group>"; };
+		E28D275828D626DD00CBDE39 /* GreedyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreedyCell.xib; sourceTree = "<group>"; };
+		E2B9C19528D760D800BA2DFA /* GreedyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyUser.swift; sourceTree = "<group>"; };
+		E2B9C19828D7D58900BA2DFA /* PayersArr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayersArr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +54,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21763DF28D1FAAC001A78F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9C19528D760D800BA2DFA /* GreedyUser.swift */,
+				E2B9C19828D7D58900BA2DFA /* PayersArr.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E21763E828D1FFB2001A78F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E285A6DD28D0FC9E002D92E0 /* EqualViewController.swift */,
+				E21763EA28D200D2001A78F4 /* ResultViewController.swift */,
+				E28D274D28D6010300CBDE39 /* StartViewController.swift */,
+				E28D275028D610AA00CBDE39 /* PreGreedyViewController.swift */,
+				E28D275328D6196000CBDE39 /* GreedyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E285A6CD28D0FC9E002D92E0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +94,27 @@
 		E285A6D828D0FC9E002D92E0 /* Bill Break */ = {
 			isa = PBXGroup;
 			children = (
+				E256C81128D24CAA007B911D /* Bill Break.entitlements */,
+				E28D275628D626A300CBDE39 /* Views */,
+				E21763DF28D1FAAC001A78F4 /* Model */,
 				E285A6D928D0FC9E002D92E0 /* AppDelegate.swift */,
 				E285A6DB28D0FC9E002D92E0 /* SceneDelegate.swift */,
-				E285A6DD28D0FC9E002D92E0 /* ViewController.swift */,
+				E21763E828D1FFB2001A78F4 /* Controller */,
 				E285A6DF28D0FC9E002D92E0 /* Main.storyboard */,
 				E285A6E228D0FCA2002D92E0 /* Assets.xcassets */,
 				E285A6E428D0FCA2002D92E0 /* LaunchScreen.storyboard */,
 				E285A6E728D0FCA2002D92E0 /* Info.plist */,
 			);
 			path = "Bill Break";
+			sourceTree = "<group>";
+		};
+		E28D275628D626A300CBDE39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E28D275728D626DD00CBDE39 /* GreedyCell.swift */,
+				E28D275828D626DD00CBDE39 /* GreedyCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +177,7 @@
 				E285A6E628D0FCA2002D92E0 /* LaunchScreen.storyboard in Resources */,
 				E285A6E328D0FCA2002D92E0 /* Assets.xcassets in Resources */,
 				E285A6E128D0FC9E002D92E0 /* Main.storyboard in Resources */,
+				E28D275A28D626DD00CBDE39 /* GreedyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E285A6DE28D0FC9E002D92E0 /* ViewController.swift in Sources */,
+				E21763EB28D200D2001A78F4 /* ResultViewController.swift in Sources */,
+				E285A6DE28D0FC9E002D92E0 /* EqualViewController.swift in Sources */,
 				E285A6DA28D0FC9E002D92E0 /* AppDelegate.swift in Sources */,
+				E28D275928D626DD00CBDE39 /* GreedyCell.swift in Sources */,
+				E28D275428D6196000CBDE39 /* GreedyViewController.swift in Sources */,
 				E285A6DC28D0FC9E002D92E0 /* SceneDelegate.swift in Sources */,
+				E2B9C19628D760D800BA2DFA /* GreedyUser.swift in Sources */,
+				E28D274E28D6010300CBDE39 /* StartViewController.swift in Sources */,
+				E28D275128D610AA00CBDE39 /* PreGreedyViewController.swift in Sources */,
+				E2B9C19928D7D58900BA2DFA /* PayersArr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bill Break/Bill Break.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWQUW5W64B;
 				INFOPLIST_FILE = "Bill Break/Info.plist";
@@ -295,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dr.alexandr.Bill-Break";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bill Break/Bill Break.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWQUW5W64B;
 				INFOPLIST_FILE = "Bill Break/Info.plist";
@@ -314,6 +375,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dr.alexandr.Bill-Break";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
