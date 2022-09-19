@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,7 +29,7 @@
                                 <rect key="frame" x="107" y="295" width="200" height="55"/>
                                 <color key="backgroundColor" name="Accent Blue"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="ZkD-nu-r7o"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ZkD-nu-r7o"/>
                                     <constraint firstAttribute="height" constant="55" id="jUG-mU-V3l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
@@ -50,7 +49,7 @@
                                 <color key="backgroundColor" name="Accent Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="9ut-6p-9IR"/>
-                                    <constraint firstAttribute="width" constant="200" id="fcP-gq-EEJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="fcP-gq-EEJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <state key="normal" title="Greedy">
@@ -456,7 +455,8 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yn7-aP-H9e">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="709"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="Accent Yellow"/>
+                                <color key="tintColor" name="Accent Blue"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GreedyCell" id="GqC-R3-zeL" customClass="GreedyCell" customModule="Bill_Break">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -473,23 +473,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="quY-AL-q1B">
                                 <rect key="frame" x="20" y="719" width="374" height="55"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0j-Dd-STB" userLabel="Calculate">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="55"/>
-                                        <color key="backgroundColor" name="Accent Blue"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="DoG-mk-80a"/>
-                                            <constraint firstAttribute="height" constant="55" id="hTM-dz-V5i"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                        <state key="normal" title="Calculate">
-                                            <color key="titleColor" name="Accent Yellow"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10f"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFA-76-LEN">
-                                        <rect key="frame" x="197" y="0.0" width="177" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="55"/>
                                         <color key="backgroundColor" name="Accent Blue"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="OjZ-gi-I58"/>
@@ -504,6 +489,24 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="greedyRecalculatePressed:" destination="jfl-8Q-0Or" eventType="touchUpInside" id="TPJ-MK-zKK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0j-Dd-STB" userLabel="Calculate">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="55"/>
+                                        <color key="backgroundColor" name="Accent Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="DoG-mk-80a"/>
+                                            <constraint firstAttribute="height" constant="55" id="hTM-dz-V5i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" name="Accent Yellow"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10f"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Sgt-HL-8YO" kind="show" id="OUp-0S-wTr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -532,6 +535,70 @@
             </objects>
             <point key="canvasLocation" x="902.89855072463774" y="800.89285714285711"/>
         </scene>
+        <!--GreedyResultViewController-->
+        <scene sceneID="uTE-og-gj4">
+            <objects>
+                <viewController title="GreedyResultViewController" id="Sgt-HL-8YO" customClass="GreedyResultViewController" customModule="Bill_Break" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="weA-DZ-jbE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRL-Qj-nLv">
+                                <rect key="frame" x="119.5" y="719" width="175" height="55"/>
+                                <color key="backgroundColor" name="Accent Blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="CkO-EI-NKN"/>
+                                    <constraint firstAttribute="height" constant="55" id="WVf-s7-CDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Recalculate">
+                                    <color key="titleColor" name="Accent Yellow"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10f"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resultRecalculatePressed:" destination="Sgt-HL-8YO" eventType="touchUpInside" id="gCG-hO-6rP"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XUK-Vx-Z9S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="709"/>
+                                <color key="backgroundColor" name="Accent Yellow"/>
+                                <color key="tintColor" name="Accent Blue"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GreedyResultCell" id="avK-xP-jXs" customClass="GreedyResultCell" customModule="Bill_Break">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="avK-xP-jXs" id="Lb9-4D-z3I">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" name="Accent Yellow"/>
+                                            <color key="tintColor" name="Accent Blue"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T7x-c4-eKz"/>
+                        <color key="backgroundColor" name="Accent Yellow"/>
+                        <constraints>
+                            <constraint firstItem="MRL-Qj-nLv" firstAttribute="bottom" secondItem="T7x-c4-eKz" secondAttribute="bottom" id="4tR-ob-kFz"/>
+                            <constraint firstItem="MRL-Qj-nLv" firstAttribute="top" secondItem="XUK-Vx-Z9S" secondAttribute="bottom" constant="10" id="6pL-PQ-IN3"/>
+                            <constraint firstItem="XUK-Vx-Z9S" firstAttribute="top" secondItem="T7x-c4-eKz" secondAttribute="top" id="CSX-x3-kho"/>
+                            <constraint firstItem="T7x-c4-eKz" firstAttribute="trailing" secondItem="XUK-Vx-Z9S" secondAttribute="trailing" id="GeB-AA-kj1"/>
+                            <constraint firstItem="XUK-Vx-Z9S" firstAttribute="leading" secondItem="T7x-c4-eKz" secondAttribute="leading" id="IQK-kW-fpU"/>
+                            <constraint firstItem="MRL-Qj-nLv" firstAttribute="centerX" secondItem="weA-DZ-jbE" secondAttribute="centerX" id="bmJ-Q4-979"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zaB-qr-djN"/>
+                    <connections>
+                        <outlet property="tableView" destination="XUK-Vx-Z9S" id="qWr-06-FaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSk-hH-2o9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.826086956522" y="800.89285714285711"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="Accent Blue">
@@ -540,8 +607,5 @@
         <namedColor name="Accent Yellow">
             <color red="1" green="0.87199997901916504" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

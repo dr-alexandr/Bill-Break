@@ -18,7 +18,6 @@ class GreedyViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         
         //TableView setup
-        tableView.backgroundColor = UIColor(named: "Accent Yellow")
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.registerTableViewCells()
@@ -37,7 +36,7 @@ class GreedyViewController: UIViewController, UITableViewDataSource, UITableView
         //Setting empty User Data Slots
         if let safePayers = payers {
             for n in 0...safePayers - 1 {
-                payersArr.append(GreedyUser(number: n + 1, tip: "10", sum: "", zeroBool: false, tenBool: true, twentyBool: false))
+                payersArr.append(GreedyUser(number: n + 1))
             }
         }
         

@@ -16,7 +16,7 @@ struct GreedyUser {
     var tenBool: Bool
     var twentyBool: Bool
     
-    init(number: Int, tip: String, sum: String, zeroBool: Bool, tenBool: Bool, twentyBool: Bool) {
+    init(number: Int, tip: String = "10", sum: String = "", zeroBool: Bool = false, tenBool: Bool = true, twentyBool: Bool = false) {
         self.cellNumber = number
         self.cellTip = tip
         self.cellSum = sum

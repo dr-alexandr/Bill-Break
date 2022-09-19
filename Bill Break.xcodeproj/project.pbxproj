@@ -21,6 +21,9 @@
 		E28D275A28D626DD00CBDE39 /* GreedyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28D275828D626DD00CBDE39 /* GreedyCell.xib */; };
 		E2B9C19628D760D800BA2DFA /* GreedyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C19528D760D800BA2DFA /* GreedyUser.swift */; };
 		E2B9C19928D7D58900BA2DFA /* PayersArr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C19828D7D58900BA2DFA /* PayersArr.swift */; };
+		E2B9C19C28D8937D00BA2DFA /* GreedyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C19B28D8937D00BA2DFA /* GreedyResultViewController.swift */; };
+		E2B9C1A028D8977900BA2DFA /* GreedyResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C19E28D8977900BA2DFA /* GreedyResultCell.swift */; };
+		E2B9C1A128D8977900BA2DFA /* GreedyResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B9C19F28D8977900BA2DFA /* GreedyResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		E28D275828D626DD00CBDE39 /* GreedyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreedyCell.xib; sourceTree = "<group>"; };
 		E2B9C19528D760D800BA2DFA /* GreedyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyUser.swift; sourceTree = "<group>"; };
 		E2B9C19828D7D58900BA2DFA /* PayersArr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayersArr.swift; sourceTree = "<group>"; };
+		E2B9C19B28D8937D00BA2DFA /* GreedyResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyResultViewController.swift; sourceTree = "<group>"; };
+		E2B9C19E28D8977900BA2DFA /* GreedyResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyResultCell.swift; sourceTree = "<group>"; };
+		E2B9C19F28D8977900BA2DFA /* GreedyResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreedyResultCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 				E28D274D28D6010300CBDE39 /* StartViewController.swift */,
 				E28D275028D610AA00CBDE39 /* PreGreedyViewController.swift */,
 				E28D275328D6196000CBDE39 /* GreedyViewController.swift */,
+				E2B9C19B28D8937D00BA2DFA /* GreedyResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -113,6 +120,8 @@
 			children = (
 				E28D275728D626DD00CBDE39 /* GreedyCell.swift */,
 				E28D275828D626DD00CBDE39 /* GreedyCell.xib */,
+				E2B9C19E28D8977900BA2DFA /* GreedyResultCell.swift */,
+				E2B9C19F28D8977900BA2DFA /* GreedyResultCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 			files = (
 				E285A6E628D0FCA2002D92E0 /* LaunchScreen.storyboard in Resources */,
 				E285A6E328D0FCA2002D92E0 /* Assets.xcassets in Resources */,
+				E2B9C1A128D8977900BA2DFA /* GreedyResultCell.xib in Resources */,
 				E285A6E128D0FC9E002D92E0 /* Main.storyboard in Resources */,
 				E28D275A28D626DD00CBDE39 /* GreedyCell.xib in Resources */,
 			);
@@ -192,9 +202,11 @@
 				E285A6DE28D0FC9E002D92E0 /* EqualViewController.swift in Sources */,
 				E285A6DA28D0FC9E002D92E0 /* AppDelegate.swift in Sources */,
 				E28D275928D626DD00CBDE39 /* GreedyCell.swift in Sources */,
+				E2B9C19C28D8937D00BA2DFA /* GreedyResultViewController.swift in Sources */,
 				E28D275428D6196000CBDE39 /* GreedyViewController.swift in Sources */,
 				E285A6DC28D0FC9E002D92E0 /* SceneDelegate.swift in Sources */,
 				E2B9C19628D760D800BA2DFA /* GreedyUser.swift in Sources */,
+				E2B9C1A028D8977900BA2DFA /* GreedyResultCell.swift in Sources */,
 				E28D274E28D6010300CBDE39 /* StartViewController.swift in Sources */,
 				E28D275128D610AA00CBDE39 /* PreGreedyViewController.swift in Sources */,
 				E2B9C19928D7D58900BA2DFA /* PayersArr.swift in Sources */,
